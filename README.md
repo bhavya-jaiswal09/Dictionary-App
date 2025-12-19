@@ -16,8 +16,9 @@ A simple and interactive Dictionary App that allows users to search English word
 - Clean and responsive UI
 
 
-## 📸 Screenshot
+## 🖼️ App Preview
 (Add screenshot here)
+![Dictionary UI](https://github.com/user-attachments/assets/540ccaa0-234a-4200-9416-3047a3e1552a)
 
  
 ## 🙌 Author

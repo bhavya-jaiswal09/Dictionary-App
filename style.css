@@ -1,0 +1,112 @@
+:root{
+  --primary-color:#008080;
+  --bcg-color:#ebdddd;
+  --padding:20px;
+  --text-color:#fff;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial,sans-serif;
+  background-color:var(--bcg-color);
+  width:100vw;
+}
+
+header{
+  background-color:var(--primary-color);
+  padding:var(--padding);
+  color:var(--text-color);
+}
+header h1{
+  font-size:36px;
+}
+main{
+  min-height:cal(100vh - 160px); /*header + footer space*/
+  padding:var(--padding);
+  width: 80%;
+  margin: 0 auto;
+
+  padding-bottom:80px;
+   
+}
+main form{
+  display:flex;
+  justify-content:center;
+  
+}
+
+form input[type="text"] ,button[type="submit"]{
+  border-radius:5px;
+  border:none;
+  font-size:16px;
+  font-weight:500;
+  padding:calc(var(--padding)/2);
+}
+form input[type="text"]{
+  width: 100%;
+}
+
+form button[type="submit"]{
+  margin-left:10px;
+  background-color:var(--primary-color);
+  color:var(--text-color);
+  cursor:pointer;
+}
+  
+footer{
+  background-color:var(--primary-color);
+  padding:var(--padding);
+  color:var(--text-color);
+  text-align:center;
+  position:fixed;
+  width:100%;
+  bottom:0;
+  left:0;
+  height:60px;
+  
+} 
+.result {
+  background-color: #fff;
+  padding: var(--padding);
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.result p{
+  margin-top:10px;
+}
+
+a button{
+  padding:10px;
+  border-radius:5px;
+  background-color:var(--primary-color);
+  color:var(--text-color);
+  margin-top:10px;
+  border:none;
+  cursor:pointer;
+
+}
+
+.partsOfSpeech{
+  font-style:italic;
+  color:#808080;
+  
+}
+.antonym-list{
+  margin-top:4px;
+}
+@media screen and (max-width:320px){
+  main form{
+    display:flex;
+    flex-direction:column;
+
+  }
+  form button[type="submit"]{
+    margin-left:0;
+    margin-top:10px;
+  }
+}
